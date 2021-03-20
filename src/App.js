@@ -6,7 +6,7 @@ import { Container } from './components/UIkit/Container';
 
 function App() {
   return (
-    <Container>
+    <Container fluid>
       <SideBar/>
       <Header/>
       <Slider/>

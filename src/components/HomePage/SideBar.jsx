@@ -25,6 +25,9 @@ export const SideBar = () => {
     @media screen and (min-width: 1024px) {
       width: 65px;
     }
+    @media screen and (min-width: 1440px) {
+      width: 64px;
+    }
 
     a {
       text-decoration: none;

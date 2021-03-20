@@ -17,6 +17,11 @@ export const Button = (props) => {
     @media (max-width:320px){
         width: 100%;
     }
+    
+    ${props.marginTop &&
+    css`
+      margin-top: 60px;
+    `}
 
     ${props.secondary &&
     css`
