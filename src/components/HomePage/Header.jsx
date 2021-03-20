@@ -45,12 +45,12 @@ export const Header = () => {
       <Container>
         <Wrapper>
           <Head>
-            <Title green>Need for drive</Title>
+            <Title color='#0ec261'>Need for drive</Title>
             <Text>Ульяновск</Text>
           </Head>
           <MainPart>
             <Title large>Каршеринг</Title>
-            <Title large green>
+            <Title large color='#0ec261' marginBottom={34}>
               Need for drive
             </Title>
             <Text large>Поминутная аренда авто твоего города</Text>
