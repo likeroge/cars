@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.f448954d.chunk.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.53421b05.chunk.js",
-    "main.js.map": "/%7Brepo-name%7D/static/js/main.53421b05.chunk.js.map",
-    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.18eeefe1.js",
-    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.18eeefe1.js.map",
-    "static/js/2.972312bb.chunk.js": "/%7Brepo-name%7D/static/js/2.972312bb.chunk.js",
-    "static/js/2.972312bb.chunk.js.map": "/%7Brepo-name%7D/static/js/2.972312bb.chunk.js.map",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "static/css/main.f448954d.chunk.css.map": "/%7Brepo-name%7D/static/css/main.f448954d.chunk.css.map",
-    "static/js/2.972312bb.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.972312bb.chunk.js.LICENSE.txt",
-    "static/media/logo.db36153e.svg": "/%7Brepo-name%7D/static/media/logo.db36153e.svg"
+    "main.css": "/cars/static/css/main.f448954d.chunk.css",
+    "main.js": "/cars/static/js/main.53421b05.chunk.js",
+    "main.js.map": "/cars/static/js/main.53421b05.chunk.js.map",
+    "runtime-main.js": "/cars/static/js/runtime-main.ab8c9637.js",
+    "runtime-main.js.map": "/cars/static/js/runtime-main.ab8c9637.js.map",
+    "static/js/2.972312bb.chunk.js": "/cars/static/js/2.972312bb.chunk.js",
+    "static/js/2.972312bb.chunk.js.map": "/cars/static/js/2.972312bb.chunk.js.map",
+    "index.html": "/cars/index.html",
+    "static/css/main.f448954d.chunk.css.map": "/cars/static/css/main.f448954d.chunk.css.map",
+    "static/js/2.972312bb.chunk.js.LICENSE.txt": "/cars/static/js/2.972312bb.chunk.js.LICENSE.txt",
+    "static/media/logo.db36153e.svg": "/cars/static/media/logo.db36153e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.18eeefe1.js",
+    "static/js/runtime-main.ab8c9637.js",
     "static/js/2.972312bb.chunk.js",
     "static/css/main.f448954d.chunk.css",
     "static/js/main.53421b05.chunk.js"
