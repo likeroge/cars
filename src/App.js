@@ -1,16 +1,19 @@
 import React from 'react';
-import { Header } from './components/HomePage/Header';
 import { SideBar } from './components/HomePage/SideBar';
 import { Slider } from './components/HomePage/Slider';
-import { Container } from './components/UIkit/Container';
+import { Head } from './components/HomePage/Head';
+import { AppWrapper } from './components/UIkit/AppWrapper';
+import { Flex } from './components/UIkit/Flex';
 
 function App() {
   return (
-    <Container fluid>
-      <SideBar/>
-      <Header/>
-      <Slider/>
-    </Container>
+    <AppWrapper>
+    <Flex>
+      <SideBar />
+      <Head />
+      <Slider />
+    </Flex>
+  </AppWrapper>
   );
 }
 

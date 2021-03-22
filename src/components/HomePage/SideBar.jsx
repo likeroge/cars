@@ -1,47 +1,52 @@
 import styled from "styled-components";
+import { BurgerBtn } from "../UIkit/BurgerBtn";
+import { Flex } from "../UIkit/Flex";
 
-export const SideBar = () => {
-  const StyledSideBar = styled.div`
+
+
+const StyledSideBar = styled.div`
+  height: 100vh;
+  width: 64px;
+  background: #151b1f;
+  color: #fff;
+  a {
+    color: #0ec261;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+  }
+
+  @media ${(props) => props.theme.media.widescreen} {
     width: 64px;
-    height: 100vh;
-    background: #151b1f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-
-    @media screen and (max-width: 767px) {
-      height: 36px;
-      background: #fff;
-      color: #111;
-      a {
-        display: none;
-      }
-    }
-    @media screen and (min-width: 768px) {
-      width: 85.77px;
-    }
-    @media screen and (min-width: 1024px) {
-      width: 65px;
-    }
-    @media screen and (min-width: 1440px) {
-      width: 64px;
-    }
-
+  }
+  @media ${(props) => props.theme.media.desktop} {
+    width: 65px;
+  }
+  @media ${(props) => props.theme.media.tablet} {
+    width: 85.77px;
+  }
+  @media ${(props) => props.theme.media.phone} {
+    display: none;
+    /* background: #111; */
+    /* color: #111; */
     a {
-      text-decoration: none;
-      color: #0ec261;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-weight: 700;
-      margin-bottom: 32px;
+      display: none;
     }
-  `;
+  }
+`;
 
+export const SideBar = (props) => {
   return (
-    <StyledSideBar>
-      <h1>Burger</h1>
-      <a href="#">Eng</a>
-    </StyledSideBar>
+      <StyledSideBar {...props}>
+        <Flex
+          padding="32px 0"
+          direction="column"
+          justify="space-between"
+          align="center"
+          height="100%"
+        >
+          <BurgerBtn/>
+          <a href="#">Eng</a>
+        </Flex>
+      </StyledSideBar>
   );
 };

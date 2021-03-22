@@ -1,16 +1,12 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+
+const StyledText = styled.p`
+  font-size: ${(props) => props.text || "14px"};
+  line-height: ${(props) => props.lineHeight || "16px"};
+  color: ${(props) => props.color || "#999999"};
+  font-weight: ${(props) => props.fontWeight || "normal"};
+`;
 
 export const Text = (props) => {
-  const StyledText = styled.p`
-    font-size: 14px;
-    line-height: 16px;
-    color: #999999;
-    ${props.large &&
-    css`
-      font-weight: 300;
-      font-size: 26px;
-      line-height: 30px;
-    `}
-  `;
-  return <StyledText>{props.children}</StyledText>;
+  return <StyledText {...props} />;
 };
