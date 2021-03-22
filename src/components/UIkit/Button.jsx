@@ -20,7 +20,7 @@ const StyledButton = styled.button`
     margin-bottom: ${(props) => props.mb || "0px"};
 
     @media ${(props) => props.theme.media.phone} {
-      width: 100vw;
+      width: 100%;
       height:50px;
     }
 

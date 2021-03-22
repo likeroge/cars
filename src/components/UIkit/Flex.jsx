@@ -7,6 +7,9 @@ const StyledFlex = styled.div`
   align-items: ${(props) => props.align || "stretch"};
   justify-content: ${(props) => props.justify || "stretch"};
   margin: ${(props) => props.margin || "0"};
+  margin-top: ${(props) => props.mt || "0"};
+  margin-bottom: ${(props) => props.mb || "0"};
+
   padding: ${(props) => props.padding || "0"};
 `;
 

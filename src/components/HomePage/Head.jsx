@@ -11,14 +11,41 @@ export const Head = (props) => {
     flex: 1;
   `;
 
-  const HeadTitle = styled(Title)`
+  const FeatureTitle = styled(Title)`
     @media ${(props) => props.theme.media.phone} {
       font-size: ${(props) => "32px"};
       line-height: ${(props) => "100%"};
     }
   `;
 
-  const HeadText = styled(Text)`
+  const HeaderBlock = styled(Flex)`
+    width: 100%;
+    @media ${(props) => props.theme.media.phone} {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  `;
+
+  const HeaderText = styled(Text)`
+    @media ${(props) => props.theme.media.phone} {
+      margin-top: 9.17px;
+    }
+  `;
+
+  const FooterText = styled(Text)`
+    @media ${(props) => props.theme.media.phone} {
+        color: #EEEEEE;
+    }
+  `;
+
+const FooterPhoneText= styled(Text)`
+color: #121212;
+@media ${(props) => props.theme.media.phone} {
+    color: #0EC261;
+}
+`;
+
+  const FeatureText = styled(Text)`
     line-height: 30px;
     font-weight: 300;
     font-size: 26px;
@@ -32,49 +59,65 @@ export const Head = (props) => {
     padding: 32px 64px;
     @media ${(props) => props.theme.media.phone} {
       padding: 16px;
-  
+    }
+    @media ${(props) => props.theme.media.tablet} {
+      padding: 32px;
+    }
+    @media ${(props) => props.theme.media.desktop} {
+      padding: 32px;
     }
   `;
 
   const MobileBurgerBtn = styled(BurgerBtn)`
+    margin-top: 8px;
     display: none;
     @media ${(props) => props.theme.media.phone} {
       display: block;
     }
   `;
 
-  const MobileFooter = styled.div`
+  const MobileFooter = styled(Flex)`
     height: 72px;
-    background: #151B1F;
-  `
+    background: #151b1f;
+    display: none;
+    @media ${(props) => props.theme.media.phone} {
+      padding: 16px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+  `;
 
   return (
     <StyledHeader {...props}>
       <Wrapper height="100vh" direction="column" justify="space-between">
-        <Flex align="center" justify="space-between">
+        <Flex>
           <MobileBurgerBtn />
-
-          <Title color="#0ec261">Need for drive</Title>
-
-          <Text>Ульяновск</Text>
-
+          <HeaderBlock align="center" justify="space-between">
+            <Title color="#0ec261">Need for drive</Title>
+            <HeaderText>Ульяновск</HeaderText>
+          </HeaderBlock>
         </Flex>
+
         <Flex direction="column">
-          <HeadTitle large>Каршеринг</HeadTitle>
-          <HeadTitle large color="#0ec261" mb="34px">
+          <FeatureTitle large>Каршеринг</FeatureTitle>
+          <FeatureTitle large color="#0ec261" mb="34px">
             Need for drive
-          </HeadTitle>
-          <HeadText lineHeight="30px" fontWeight="300" text="26px">
+          </FeatureTitle>
+          <FeatureText lineHeight="30px" fontWeight="300" text="26px">
             Поминутная аренда авто твоего города
-          </HeadText>
+          </FeatureText>
           <Button light mt="60px">
             Забронировать
           </Button>
         </Flex>
-        <Flex justify="space-between">
-          <Text>© 2016-2019 «Need for drive»</Text>
-          <Text>8 (495) 234-22-44</Text>
-        </Flex>
+        <MobileFooter>
+          {/* <Flex justify="space-between"> */}
+          <FooterText>© 2016-2019 «Need for drive»</FooterText>
+          <FooterPhoneText>8 (495) 234-22-44</FooterPhoneText>
+          {/* </Flex> */}
+        </MobileFooter>
       </Wrapper>
     </StyledHeader>
   );
